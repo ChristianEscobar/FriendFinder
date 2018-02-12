@@ -1,0 +1,43 @@
+.jumbotron, .panel, .panel-default {
+  opacity: .8;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: red;
+    color: white;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  z-index:2;
+}
+
+body {
+  background: url('http://d6vrtzdlbankn.cloudfront.net/wp-content/uploads/2017/04/Pic1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index:-100;
+}
+
+a {
+	color: #fff !important;
+}
+
+.btn-primary {
+	background-color: #603e1e !important;
+	border-color: #180909 !important;
+}
+
+.btn-primary:hover {
+	background-color: #180909 !important;
+}
+
+.glyphicon-fire {
+	color: #d43f3a;
+}
