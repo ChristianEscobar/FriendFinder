@@ -1,9 +1,11 @@
+const path = require("path");
+
 module.exports = (app) => {
 	app.get("/", (req, res) => {
-		console.log("catch all route.");
+		res.sendFile(path.join(__dirname, "../public/home.html"));
 	});
 
 	app.get("/survey", (req, res) => {
-		console.log("survey route");
+		res.sendFile(path.join(__dirname, "../public/survey.html"));
 	});
 }
