@@ -6,31 +6,32 @@ module.exports = (app) => {
 	});
 
 	app.post("/api/friends", (req, res) => {
-		let currentMatch = null;
-		let bestDiffFound = 0;
+		let lowestDiffObj = null;
+		let lowestDiffFound = -1;
+
+		const currentUserScoreTotal = req.body.scores.reduce(sumItems);
 
 		for(let i=0; i<friends.length; i++) {
-			let currentFriendObj = friends[i];
-			// compare scores
-			let totalDiffForCurrentFriend = 0;
-			for(let j=0; j<req.body.scores.length; j++) {
-				totalDiffForCurrentFriend += Math.abs(currentFriendObj.scores[j] - req.body.scores[j]);
-			}
+			const currentFriendScoreTotal = friends[i].scores.reduce(sumItems);
 
-			// When an existing friend has been compared, compare the total diff with the best diff so far
-			if(currentMatch === null) {
-				bestDiffFound = totalDiffForCurrentFriend;
+			const currentDiffValue = Math.abs(currentUserScoreTotal - currentFriendScoreTotal); 
 
-				currentMatch = currentFriendObj;
-			} else if(totalDiffForCurrentFriend > bestDiffFound) {
-				currentMatch = currentFriendObj;
+			if(lowestDiffFound === -1 || currentDiffValue < lowestDiffFound) {
+				lowestDiffFound = currentDiffValue;
+
+				lowestDiffObj = friends[i];
 			}
 		}
 
+		// Add the current user to storage
 		friends.push(req.body);
 
 		// respond with a friend object
-		res.json(currentMatch);
+		res.json(lowestDiffObj);
+
+		function sumItems(total, num) {
+			return parseInt(total) + parseInt(num);
+		}
 	});
 }
 
