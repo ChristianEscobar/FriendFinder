@@ -17,7 +17,7 @@ This application has been built using a HTML/CSS front end with a Node.js backen
 1. The application is hosted on Heroku, click on the link below to access it.
     * [FriendFinder on Heroku](https://murmuring-thicket-23252.herokuapp.com/)
    
-2. If you prefer to run the application locally, clone this repository and run:
+2. If you prefer to run the application locally, clone this repository and then run:
     ```bash
     npm install
     ```
