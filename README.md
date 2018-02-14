@@ -1,9 +1,9 @@
 # FriendFinder
 
-# What Is It?
+## What Is It?
 
-# How Do I Use It?
+## How Do I Use It?
 
 [FriendFinder on Heroku](https://murmuring-thicket-23252.herokuapp.com/)
 
-# Error Handling
+## Error Handling
