@@ -23,3 +23,5 @@ This application has been built using a HTML/CSS front end with a Node.js backen
     ```
 
 ## Error Handling
+
+You will not be able to submit the survey page without providing a response to all of the questions.  You will be presented with an error dialog if you attempt to submit the survey without providing a response to all of the questions.
