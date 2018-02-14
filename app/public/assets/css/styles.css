@@ -1,0 +1,15 @@
+.jumbotron {
+	background-color: #FAEBD7;
+}
+
+.header {
+	background-color: #FAEBD7;
+	border-radius: 6px;
+	padding: 25px;
+}
+
+.content {
+	border: 1px solid;
+	border-radius: 6px;
+	padding: 25px;
+}
