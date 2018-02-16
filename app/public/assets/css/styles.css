@@ -12,4 +12,29 @@
 	border: 1px solid;
 	border-radius: 6px;
 	padding: 25px;
+	background-color: #FFFFFF;
+}
+
+.footer p {
+	color: #FFFFFF;
+}
+
+.footer a {
+	color: #FFFFFF;
+}
+
+.content-body {
+	background-color: #6495ED;
+}
+
+.title {
+	font-family: 'Fontdiner Swanky', cursive;
+}
+
+.text {
+	font-family: 'Oswald', sans-serif;
+}
+
+.container hr {
+	border-color: #FFFFFF;
 }
