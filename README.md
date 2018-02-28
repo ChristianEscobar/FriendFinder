@@ -1,5 +1,9 @@
 # FriendFinder
 
+![Home](app/public/assets/images/github/HomeScreenshot.png)
+![Survey](app/public/assets/images/github/SurveyScreenshot.png)
+
+
 ## What Is It?
 
 This full-stack site will take in your results from a survey and then compare your answers with those from other users. The application will then display the name and picture of the user with the best overall match.
