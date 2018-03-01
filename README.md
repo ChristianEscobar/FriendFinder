@@ -17,7 +17,7 @@ This full-stack site will take in your results from a survey and then compare yo
     ```bash
     npm install
     ```
-## Under the Hood
+## Under The Hood
 
 This application has been built using a HTML/CSS front end with a Node.js backend.  In addition, the following Node packages are used:
 
